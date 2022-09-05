@@ -9,13 +9,13 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
 }
 
-.bancontent {
+.banner__content {
     align-items: center;
 
     
 }
 
-.banner-title {
+.banner__title {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
@@ -30,7 +30,7 @@
     justify-content: center;
 }
 
-.banner-click {
+.ban-button {
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;

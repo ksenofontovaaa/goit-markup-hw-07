@@ -10,7 +10,7 @@
 }
 
 
-.footer-logo-first, .footer-logo-sec {
+.logo, .logo__down {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -22,7 +22,7 @@
     
 }
 
-.footer-logo-first {
+.logo {
     color: #2196F3;
     
     margin-bottom: 20px;
@@ -30,7 +30,7 @@
 
 
  
-.footer-contact-link, .footer-adr-link  {
+.down__link, .down__adress  {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -39,23 +39,23 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.footer-contact-item:not(:last-child) {
+.down__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-adr-link {
+.down__adress {
     color: #FFFFFF;
 }
 
-.footer-contact-link:hover, .footer-contact-link:focus {
+.down__adress:hover, .down__adress:focus {
     color: #2196F3;
 }
 
-.footer-adr-link:hover, .footer-adr-link:focus {
+.down__link:hover, .down__link:focus {
     color: #2196F3;
 }
 
-.foot-soc-title{
+.foot-soc__title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -67,18 +67,18 @@
     margin-top: 0;
 }
 
-.footer-social-list {
+.fsoc {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.foot-soc-item {
+.fsoc__item {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
 
-.foot-soc-link {
+.fsoc__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -89,14 +89,14 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-soc-icon {
+.fsoc__icon {
     fill: #FFFFFF;
 }
 
-.foot-soc-link:hover {
+.fsoc__link:hover {
     background-color: #2196F3;
 }
 
-.foot-soc-link:hover .foot-soc-icon{
+.fsoc__link:hover .foot-soc-icon{
     fill: #FFFFFF;
 }

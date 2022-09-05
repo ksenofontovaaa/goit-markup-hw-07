@@ -1,19 +1,24 @@
-.workers-list{
-    display: flex;
-            
-}
-
 .workers {
     background-color: #F5F4FA;
 }
 
-.workers-item {
+.worker {
+    display: flex;
+    align-items: center;
+
+    margin: 0;   
+}
+
+.worker__item {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.worker__item:not(:last-child) {
+    margin-right: 30px;
+}
 
-.workers-soc {
+.worker-soc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +27,7 @@
     padding-bottom: 30px;
 }
 
-.workers-soc-link {
+.worker-soc__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -33,20 +38,20 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.workers-soc-icon {
+.worker-soc__icon {
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.workers-soc-link:hover {
+.worker-soc__link:hover {
     background-color: #2196F3;
 }
 
-.workers-soc-link:hover .workers-soc-icon{
+.worker-soc__link:hover .worker-soc__icon{
     fill: #FFFFFF;
 }
 
-.workers-title {
+.workers__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -57,7 +62,7 @@
     margin-bottom: 50px;
 }
 
-.worker-name {
+.worker__name {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -68,7 +73,7 @@
     margin-bottom: 10px;
 }
 
-.worker-position {
+.worker__position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;

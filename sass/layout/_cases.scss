@@ -1,4 +1,4 @@
-.all-labors {
+.cases {
     display: flex;
     flex-wrap: wrap;
 
@@ -6,17 +6,17 @@
     gap: 30px;
 }
 
-.all-item {
+.cases__item {
     width: 370px;
 }
 
-.labor-cont {
+.labor {
     position: relative;
     overflow: hidden;
   
 }
 
-.labor-text {
+.labor__text {
     display: flex;
     position: absolute;
     top: 0;
@@ -34,23 +34,23 @@
     opacity: 0;
 }
 
-.all-it-link {
+.cases__link {
     display: inline-block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.all-it-link:hover, .all-it-link:focus {
+.cases__link:hover, .cases__link:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.all-it-link:hover .labor-text {
+.cases__link:hover .labor__text {
     transform: translateY(0);
     opacity: 1;
 }
 
 
-.all-content {
+.case {
     padding: 20px 24px;
 
     border-right: 1px solid #EEEEEE;
@@ -58,7 +58,7 @@
     border-left: 1px solid #EEEEEE;
 }
 
-.all-name {
+.case__name {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -68,7 +68,7 @@
     margin-bottom: 4px;
 }
 
-.all-kind {
+.case__type {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;

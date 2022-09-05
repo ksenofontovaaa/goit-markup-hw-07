@@ -1,9 +1,9 @@
-.for-sent-form {
+.sign {
     margin: 0;
     display: flex;
 }
 
-.sent-name {
+.sign-up__name {
     display: block;
     font-weight: 700;
     font-size: 14px;
@@ -16,7 +16,7 @@
 }
 
 
-.sent-email {
+.sign__email {
     display: block;
     background-color: #2F303A;
     width: 358px;
@@ -31,7 +31,7 @@
 color: #FFFFFF;
 }
 
-.sent-but {
+.sign__button {
     display: flex;
     justify-content: center;
     align-items: center;

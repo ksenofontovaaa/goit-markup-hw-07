@@ -1,4 +1,4 @@
-.labor-list {
+.kind {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     margin-right: auto;
 }
 
-.labor-click {
+.kind__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.labor-click:hover, .labor-click:focus {
+.kind__button:hover, .kind__button:focus {
     background-color: #2196F3;
     color: #FFFFFF;
 

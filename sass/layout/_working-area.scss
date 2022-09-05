@@ -1,21 +1,9 @@
 
-
-
-
-
-.work {
+.working-area {
     padding-top: 0;
 }
 
-.work-list {
-    display: flex;
-    align-items: center;
-
-    margin: 0;
-   
-}
-
-.work-title {
+.working-area__title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -28,11 +16,23 @@
     justify-content: center;
     }
 
-.work-item {
+.work {
+        display: flex;
+        align-items: center;
+    
+        margin: 0;
+       
+    }
+
+.work__item {
     position: relative;
 }
 
-.work-text {
+.work__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work__text {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,12 +9,12 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.head-navigation {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.header-logo-first {
+.logo {
     display: inline-block;
     align-items: center;
     margin-right: 93px;
@@ -28,22 +28,22 @@
 
 }
 
-.header-logo-sec {
+.logo__part {
     color: black;  
 }
 
-.header-site-list, .header-contact-list {
+.site, .contact {
     display: flex;
     
     gap: 50px;
 }
 
 
-.header-contact-list {
+.contact {
     margin-left: auto;
 }
 
-.current-page {
+.current {
     position: relative;
     padding-bottom: 32px;
     color: #2196F3;
@@ -53,7 +53,7 @@
     letter-spacing: 0.02em;
 }
 
-.current-page::after {
+.current::after {
     content: "";
 
     position: absolute;
@@ -68,12 +68,12 @@
     
 }
 
-.current-page:hover::after {
+.current:hover::after {
     display: block;
 }
 
 
-.header-site-link, .header-contact-link  {
+.site__link, .contact__link  {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -84,7 +84,7 @@
 
 
 
-.header-contact-link {
+.contact__link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -95,18 +95,14 @@
 
 
 
-.header-site-link:hover, .header-site-link:focus {
+.site__link:hover, .site__link:focus {
     color: #2196F3;
 }
 
-.header-contact-link:hover, .header-contact-link:focus {
+.contact__link:hover, .contact__link:focus {
     color: #2196F3;
     } 
 
-.contact-icons {
+.contact__icon {
         fill: currentColor;
     }
-
-.header {
-    background-color: aquamarine;
-}
