@@ -1,0 +1,54 @@
+.main > .container {
+    display: flex;
+}
+
+.banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+}
+
+.bancontent {
+    align-items: center;
+
+    
+}
+
+.banner-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-title-color);
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.banner-click {
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.5;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #2196F3;   
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+}
