@@ -17,12 +17,16 @@
 .logo {
     display: inline-block;
     align-items: center;
-    margin-right: 93px;
+    justify-content: center;
+    // margin-right: 93px;
+    
 
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    @include  text(700, 26, 1.19, null);
-  
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
    
     @extend %hover-color;
 
