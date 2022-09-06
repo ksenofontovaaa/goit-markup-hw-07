@@ -4,15 +4,8 @@
 }
 
 .working-area__title {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
-
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %title-of-section; 
+    @extend %margin-auto;
     justify-content: center;
     }
 
@@ -26,26 +19,22 @@
 
 .work__item {
     position: relative;
-}
 
-.work__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .work__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     position: absolute;
     height: 23%;
     width: 100%;
     bottom: 0;
     left: 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include  text(700, 14, 1.14, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    
+    @extend %light-color;
     background: rgba(47, 48, 58, 0.8);
 }
