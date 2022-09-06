@@ -1,10 +1,36 @@
-:root {
-  --first-title-color: #FFFFFF;
-  --second-title-color: black;
+.modal-title, .case__name, .kind__button, .worker__name, .benefits__title, .site__link, .contact__link {
+  color: #212121;
+}
+
+.sign__email, .sign-up__name, .foot-soc__title, .down__adress, .logo, .logo__down, .labor__text, .kind__button:hover, .kind__button:focus, .work__text, .ban-button, .banner__title {
+  color: #FFFFFF;
+}
+
+.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog, .site__link:hover, .site__link:focus, .contact__link:hover, .contact__link:focus, .current, .logo {
+  color: #2196F3;
+}
+
+.lab-text-name, .check-text, .case__type, .worker__position, .benefits__description, .contact__link {
+  color: #757575;
+}
+
+.logo__part {
+  color: black;
+}
+
+.modal-check:checked + .check-text::before, .fsoc__link:hover, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button, .current::after {
+  background-color: #2196F3;
+}
+
+.kind__button, .workers, .icon-ben {
+  background-color: #F5F4FA;
+}
+
+.modal, .worker__item {
+  background: #FFFFFF;
 }
 
 .kind__button, .ban-button {
-  
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -46,10 +72,15 @@
   margin-bottom: 50px;
 }
 
-.check-text, .modal-close, .fsoc__link, .clients__link, .worker-soc__link, .worker-soc, .work__text {
+.check-text, .modal-close, .fsoc__link, .kind, .clients__link, .worker-soc__link, .worker-soc, .work__text {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.kind, .clients, .working-area__title, .banner__title, .container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -81,8 +112,6 @@ img {
 
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -111,17 +140,14 @@ img {
 .logo {
   display: inline-block;
   align-items: center;
+  justify-content: center;
   margin-right: 93px;
+  margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: #2196F3;
-}
-
-.logo__part {
-  color: black;
+  line-height: 1.19;
 }
 
 .site, .contact {
@@ -136,9 +162,8 @@ img {
 .current {
   position: relative;
   padding-bottom: 32px;
-  color: #2196F3;
+  font-weight: 14;
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -150,7 +175,6 @@ img {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #2196F3;
   border-radius: 2px;
 }
 .current:hover::after {
@@ -158,11 +182,10 @@ img {
 }
 
 .site__link, .contact__link {
+  font-weight: 14;
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,16 +193,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #757575;
 }
-.contact__link:hover, .contact__link:focus {
-  color: #2196F3;
-}
-
-.site__link:hover, .site__link:focus {
-  color: #2196F3;
-}
-
 .contact__icon {
   fill: currentColor;
 }
@@ -205,10 +219,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--first-title-color);
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
 }
 
@@ -217,8 +228,6 @@ img {
   font-family: inherit;
   font-weight: 700;
   line-height: 2.5;
-  color: #FFFFFF;
-  background-color: #2196F3;
   min-width: 200px;
   height: 50px;
 }
@@ -234,7 +243,6 @@ img {
 .icon-ben {
   width: 270px;
   height: 120px;
-  background: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -243,21 +251,19 @@ img {
 }
 
 .benefits__title {
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
   margin-bottom: 10px;
 }
 
 .benefits__description {
-  font-weight: 400;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .working-area {
@@ -265,8 +271,6 @@ img {
 }
 
 .working-area__title {
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
 }
 
@@ -289,17 +293,12 @@ img {
   width: 100%;
   bottom: 0;
   left: 0;
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  text-align: center;
   background: rgba(47, 48, 58, 0.8);
-}
-
-.workers {
-  background-color: #F5F4FA;
 }
 
 .worker {
@@ -309,7 +308,6 @@ img {
 }
 
 .worker__item {
-  background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -328,10 +326,6 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.worker-soc__link:hover {
-  background-color: #2196F3;
-}
-
 .worker-soc__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -345,7 +339,6 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
   padding-top: 30px;
   margin-bottom: 10px;
 }
@@ -354,8 +347,6 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
   margin-bottom: 16px;
 }
 
@@ -367,8 +358,6 @@ img {
 .clients {
   display: flex;
   gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .clients__link {
@@ -395,28 +384,19 @@ img {
 }
 
 .kind {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .kind__button {
   padding: 6px 22px;
-  font-weight: 500;
+  font-weight: 16;
+  font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #F5F4FA;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .kind__button:hover, .kind__button:focus {
-  background-color: #2196F3;
-  color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
@@ -443,11 +423,10 @@ img {
   left: 0;
   height: 101%;
   padding: 63px 24px;
-  font-weight: 400;
+  font-weight: 18;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -478,7 +457,6 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
   margin-bottom: 4px;
 }
 
@@ -486,7 +464,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .footer {
@@ -503,15 +480,13 @@ img {
 .logo, .logo__down {
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 26;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
 }
 
-.logo {
-  color: #2196F3;
+.fotlog {
   margin-bottom: 20px;
 }
 
@@ -528,24 +503,12 @@ img {
   margin-bottom: 9px;
 }
 
-.down__adress {
-  color: #FFFFFF;
-}
-.down__adress:hover, .down__adress:focus {
-  color: #2196F3;
-}
-
-.down__link:hover, .down__link:focus {
-  color: #2196F3;
-}
-
 .foot-soc__title {
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #FFFFFF;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -567,10 +530,6 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.fsoc__link:hover {
-  background-color: #2196F3;
-}
-
 .fsoc__icon {
   fill: #FFFFFF;
 }
@@ -585,12 +544,11 @@ img {
 
 .sign-up__name {
   display: block;
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
@@ -605,7 +563,6 @@ img {
   padding-left: 16px;
   outline: transparent;
   margin-right: 12px;
-  color: #FFFFFF;
 }
 
 .sign__button {
@@ -637,7 +594,6 @@ img {
 .modal {
   width: 528px;
   height: 581px;
-  background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 500px;
@@ -657,9 +613,8 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   text-align: center;
-  color: #212121;
   margin-bottom: 12px;
 }
 
@@ -690,7 +645,6 @@ img {
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
-  /* margin-bottom: 10px; */
   padding-left: 42px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -714,31 +668,13 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-input-coment:focus {
   border-color: #2196F3;
 }
-
-.modal-input-coment::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-input-coment:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-input-coment::placeholder {
-  font-weight: 400;
+  font-weight: 12;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -770,7 +706,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
   margin-bottom: 30px;
 }
 .check-text::before {
@@ -791,13 +726,11 @@ img {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
 .modal-check:checked + .check-text::before {
-  background-color: #2196F3;
   border: none;
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
@@ -805,18 +738,16 @@ img {
 }
 
 .policy-doc {
-  color: #2196F3;
   margin-left: 3px;
 }
 
 .lab-text-name {
   display: block;
   margin-bottom: 4px;
-  font-weight: 400;
+  font-weight: 12;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
 }
 
 .send-button {
